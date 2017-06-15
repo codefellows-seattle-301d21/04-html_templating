@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
-    <script id="blog-articles" rel="text/x-handlebars-template">
+    <script id="blog-articles" type="text/x-handlebars-template">
       <article>
         <header>
           <h1>{{title}}</h1>
           <div class="byline">
               By <address><a href="">{{author}}</a></address>
               published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
-            </div>
-          </header>
-          {{{body}}}
-        </article>
+          </div>
+        </header>
+        {{{body}}}
+      </article>
     </script>
 
   </head>
