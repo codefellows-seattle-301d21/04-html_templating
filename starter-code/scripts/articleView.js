@@ -5,7 +5,7 @@ var articleView = {};
 articleView.populateFilters = function() {
   $('article').each(function() {
     if (!$(this).hasClass('template')) {
-      var val = $(this).find('address a').text();
+      var val = $(this).find('a').text();
       var optionTag = `<option value="${val}">${val}</option>`;
 
       if ($(`#author-filter option[value="${val}"]`).length === 0) {
